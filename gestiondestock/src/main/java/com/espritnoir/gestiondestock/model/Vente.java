@@ -11,7 +11,6 @@ import java.time.Instant;
 import java.util.List;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -19,7 +18,7 @@ import java.util.List;
 @Table(name = "vente")
 public class Vente extends AbstractEntity{
     @Column(name = "code")
-    private String Code;
+    private String code;
 
     @Column(name = "datevente")
     private Instant dateVente;
