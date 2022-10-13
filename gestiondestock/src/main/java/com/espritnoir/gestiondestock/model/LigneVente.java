@@ -22,6 +22,9 @@ public class LigneVente extends AbstractEntity{
     @JoinColumn(name = "idvente")
     private Vente vente;
 
+    @Column(name = "identreprise")
+    private Integer idEntreprise;
+
     @Column(name = "quantite")
     private BigDecimal quantite;
 

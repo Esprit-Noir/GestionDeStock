@@ -14,6 +14,9 @@ import java.time.Instant;
 public class Roles extends AbstractEntity{
     @Column(name = "nom")
     private String nom;
+
+    @Column(name = "identreprise")
+    private Integer idEntreprise;
     @ManyToOne
     @JoinColumn(name = "idutilisateur")
     private Utilisateur utilisateur;

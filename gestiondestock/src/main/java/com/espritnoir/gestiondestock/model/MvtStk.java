@@ -20,6 +20,9 @@ public class MvtStk extends AbstractEntity{
     @Column(name = "quantite")
     private BigDecimal quantite;
 
+    @Column(name = "identreprise")
+    private Integer idEntreprise;
+
     @ManyToOne
     @JoinColumn(name = "idarticle")
     private Article article;
