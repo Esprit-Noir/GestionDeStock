@@ -1,2 +1,13 @@
-package com.espritnoir.gestiondestock.service;public interface FournisseurService {
+package com.espritnoir.gestiondestock.service;
+
+import com.espritnoir.gestiondestock.dto.FournisseurDto;
+
+import java.util.List;
+
+public interface FournisseurService {
+    FournisseurDto save(FournisseurDto dto);
+    FournisseurDto findById(Integer id);
+    List<FournisseurDto> findAll();
+    void delete(Integer id);
+
 }

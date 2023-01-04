@@ -1,4 +1,4 @@
-package com.espritnoir.gestiondestock.handler;
+package com.espritnoir.gestiondestock.handlers;
 
 import com.espritnoir.gestiondestock.exception.EntityNotFoundException;
 import com.espritnoir.gestiondestock.exception.InvalidEntityException;

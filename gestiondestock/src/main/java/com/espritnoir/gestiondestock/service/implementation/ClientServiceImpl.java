@@ -7,9 +7,9 @@ import com.espritnoir.gestiondestock.exception.InvalidEntityException;
 import com.espritnoir.gestiondestock.model.Client;
 import com.espritnoir.gestiondestock.repository.ClientRepository;
 import com.espritnoir.gestiondestock.service.ClientService;
-import com.espritnoir.gestiondestock.validator.ArticleValidator;
 import com.espritnoir.gestiondestock.validator.ClientValidator;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,10 +18,11 @@ import java.util.stream.Collectors;
 
 @Service
 @Slf4j
-public class CLientServiceImpl implements ClientService {
+public class ClientServiceImpl implements ClientService {
     private ClientRepository clientRepository;
 
-    public CLientServiceImpl(ClientRepository clientRepository) {
+    @Autowired
+    public ClientServiceImpl(ClientRepository clientRepository) {
         this.clientRepository = clientRepository;
     }
 

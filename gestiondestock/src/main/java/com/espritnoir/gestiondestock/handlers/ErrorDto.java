@@ -1,4 +1,4 @@
-package com.espritnoir.gestiondestock.handler;
+package com.espritnoir.gestiondestock.handlers;
 
 import com.espritnoir.gestiondestock.exception.ErrorCodes;
 import lombok.*;
